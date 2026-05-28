@@ -8,5 +8,11 @@ body {
     background-position: center;  /* Centers the image */
     text-align: center;
 }
+.circle-pfp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Keeps image from looking squished */
+  }
 
 
