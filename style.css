@@ -32,11 +32,12 @@ main {
     transform: scale(1.05);
 }
 .top-right-controls {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  gap: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
 }
 
 .top-right-controls button,
