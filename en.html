@@ -7,6 +7,26 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
+    <div class="top-right-controls">
+    <button onclick="toggleMusic()">🎵 Music</button>
+    <a class="lang-button" href="index.html">English</a>
+</div>
+
+<audio id="bgmusic" loop>
+    <source src="music/bgmusic.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function toggleMusic() {
+    const music = document.getElementById("bgmusic");
+
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+}
+</script>
     <img src="images/PfP.jpg" alt="Profile Image" class="circle-pfp">
     <h2>FredTheBassist</h2>
     <h3>Bio</h3>
