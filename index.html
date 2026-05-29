@@ -17,6 +17,11 @@
 </audio>
 
 <script>
+const music = document.getElementById("bgmusic");
+const button = document.querySelector(".top-right-controls button");
+
+music.volume = 0.15;
+
 function toggleMusic() {
     if (music.paused) {
         music.play();
