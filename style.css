@@ -11,13 +11,6 @@ body {
     background-attachment: fixed; /* Keeps the background from scrolling */
     background-position: center;  /* Centers the image */
 }
-body.en-page {
-    background-image: url("images/omniman-flaxan.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-}
 body.en-page::before {
     content: "";
     position: fixed;
@@ -25,6 +18,14 @@ body.en-page::before {
     background: rgba(0, 0, 0, 0.55);
     z-index: -1;
 }
+body.en-page {
+    background-image: url("images/omniman-flaxan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
 main {
   max-width: 500px;
   margin: 80px auto;
