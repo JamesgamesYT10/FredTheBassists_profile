@@ -12,16 +12,18 @@ body {
     background-position: center;  /* Centers the image */
 }
 body.en-page {
- content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: -1;
-    background-image: url("images/omniman-flaxan.jpg");
+    background-image: url("images/omniman.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
+}
+body.en-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.60);
+    z-index: -1;
 }
 
 main {
