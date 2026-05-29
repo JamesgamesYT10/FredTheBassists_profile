@@ -22,10 +22,11 @@ music.volume = 0.25;
 
 function toggleMusic() {
     if (music.paused) {
-        music.play()
-            .catch(error => console.log(error));
+        music.play();
+        button.textContent = "⏸ Pause";
     } else {
         music.pause();
+        button.textContent = "🎵 Music";
     }
 }
 </script>
