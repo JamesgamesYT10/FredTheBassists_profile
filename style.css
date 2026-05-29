@@ -12,18 +12,11 @@ body {
     background-position: center;  /* Centers the image */
 }
 body.en-page {
-    background-image: url("images/omniman.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/omni-man.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: relative;
-}
-body.en-page::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-    pointer-events: none;
+    background-repeat: no-repeat;
 }
 
 main {
