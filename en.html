@@ -17,12 +17,13 @@
 </audio>
 
 <script>
-function toggleMusic() {
-    const music = document.getElementById("bgmusic");
-    music.volume = 0.25;
+const music = document.getElementById("bgmusic");
+music.volume = 0.25;
 
+function toggleMusic() {
     if (music.paused) {
-        music.play();
+        music.play()
+            .catch(error => console.log(error));
     } else {
         music.pause();
     }
