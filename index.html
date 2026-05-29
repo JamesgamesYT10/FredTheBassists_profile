@@ -18,13 +18,12 @@
 
 <script>
 function toggleMusic() {
-    const music = document.getElementById("bgmusic");
-    music.volume = 0.25;
-
     if (music.paused) {
         music.play();
+        button.textContent = "⏸ 一時停止";
     } else {
         music.pause();
+        button.textContent = "🎵 音楽";
     }
 }
 </script>
