@@ -56,6 +56,11 @@ main {
   cursor: pointer;
   text-decoration: none;
 }
-
+.profile-container {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 20px;
+}
 
 
