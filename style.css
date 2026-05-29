@@ -18,6 +18,13 @@ body.en-page {
     background-attachment: fixed;
     position: relative;
 }
+body.en-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    pointer-events: none;
+}
 
 main {
   max-width: 500px;
